@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    padding-bottom: 0.313rem;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* Button */
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #29AA57 ;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-primary{
+   border: #29AA57 solid 2px ;
+   color: #222;
+   
+}
+
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #29AA57;
+    color: #222;
+    
+}
+
+.btn-outlight{
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+   
+}
+
+.btn-outline:hover {
+    background-color: #29AA57;
+    color: #f5f5f5;
+    transition: all 1s ease-in-out;
+}
+
+.btn-outlight:hover {
+    background-color: #f5f5f5;
+    color: #29AA57;
+    transition: all 1s ease-in-out;
+}
+
+/* Navbar */
+.nav {
+    position: fixed;
+    background-color: #f5f5f5;
+    top:0;
+    left:0;
+    right:0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav a {
+    color:#333;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    border-bottom: #29AA57 2px solid;
+}
+
+.nav .logo {
+    font-weight: 400;
+}
+
+.nav.active{
+    background-color:#29AA57 ;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.nav.active a{
+    color: #f5f5f5;
+}
+
+.nav.active.container {
+    padding: 10px 0;
+}
+
+.nav a.current, .nav a:hover{
+    color: #222;
+    border-bottom: #f5f5f5 2px solid;;
+}
+/* Hero Area*/
+.hero {
+    background: url('/images/Solar\ Project-14\ \(1\).jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+
+.hero h1 {
+    font-size: 4rem;
+    margin: -20px 0 20px;
+}
+
+.logo{
+    
+    width: 14rem;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+
+
+/*icons*/
+
+.icons {
+    padding: 30px;
+}
+
+.icons h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #29AA57 ;
+    font-size: 2rem;
+}
+
+.icons p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+
+.icons img {
+    border: #29AA57 ;
+    height: 6rem;
+    margin-bottom: 15px;
+}
+
+
+/*counter*/
+
+.count{
+    background-color: #FFFD08;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+  }
+  
+  .counter {
+    font-size: 4rem;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 580px) {
+    body {
+      flex-direction: column;
+    }
+  }
+
+/*solutions*/
+
+.bg-primary{
+    color: #222;
+    background-color: #f5f5f5;
+    font-size: 1rem;
+}
+
+.bg-primary h2{
+    padding-bottom: 1rem;
+}
+
+.bg-primary ul li{
+    margin-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+.bg-primary a {text-decoration: none;}
+
+/*finance*/
+.finance{
+    background-color: #29AA57;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.finance h2{
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.finance a {text-decoration: none;}
+
+/*footer*/
+
+#main-footer {
+    background: #444;
+    color: #f5f5f5;
+  }
+  
+  #main-footer img {
+    width: 150px;
+  }
+  
+  #main-footer a {
+    color: #fff;
+  }
+  
+  #main-footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+  }
+  
+  #main-footer .footer-container > *:last-child {
+    grid-column: 1 / span 4;
+    padding: .5rem;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+
+  .list li {
+    padding: .5rem 0;
+    border-bottom: #555 dotted 1px;
+    width: 90%;
+   list-style-type: none;
+  }
+
+  .list li a{
+    text-decoration: none;
+  }
+
+  .py-2 { 
+      padding-top: 2rem;
+    }
+  
