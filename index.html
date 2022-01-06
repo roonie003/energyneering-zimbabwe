@@ -6,23 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mainstyle.css">
     <link rel="stylesheet" href="utilities.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap-grid.min.css">
     <script src="https://kit.fontawesome.com/a2f9677525.js" crossorigin="anonymous"></script>
     <title>Energyneering Zimbabwe</title>
 </head>
 <body>
-    <nav class="nav">
-        <div class="container">
-            <div class="logo"><a href="/index.html"><img src="/images/logo energyneering (1).png"></a>
-        </div>
-            <ul>
-              <li><a href="#" class="current">Home</a></li>
-              <li><a href="/about.html">Who We Are</a></li>
-              <li><a href="/services.html">What We Do</a></li>
-              <li><a href="/project.html">Projects</a></li>
-              <li><a href="/sdg.html">SDG's</a></li>
-              <li><a href="/contact.html">Contact</a></li>
-            </ul>
-    </nav>
+  <nav class="nav">
+    <div class="container">
+        <div class="logo"><a href="/index.html"><img src="/images/logo energyneering (1).png"></a>
+    </div>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="/about.html" >Who We Are</a>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="team.html">Meet The Team</a>
+              <a href="policy.html">Diversity Policy</a>
+              </div>
+          </div> 
+          <li><a href="/services.html">What We Do</a></li>
+          <li><a href="/project.html">Projects</a></li>
+          <li><a href="/sdg.html">SDG's</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+</nav>
 
   
     <div class="hero">
@@ -37,31 +47,37 @@
     </div>
 
 <section id="about" class="icons">
+  <p class="introduction">
+    Energy is at the heart of every economic, social and networking drive for any organization and as such Energyneering is at the core of providing customized solutions for  our everyday energy concerns. Whether you are in Agriculture, Mining, Manufacturing, Transport, Logistics, Communications and Wholesale or Retail, we have a specialized solution just for you!
+  </p>
+
   <div class="flex-items">
+    <div class="box">
+      <img src="/images/bulb-3654.svg" class="svg">
     <div>
-      <img src="/images/bulb-3654.svg">
-    <div>
-      <h3>Introduction</h3>
-        <p>
-          Energy is at the heart of every economic, social and networking drive for any organization and as such Energyneering is at the core of providing customized solutions for  our everyday energy concerns. Whether you are in Agriculture, Mining, Manufacturing, Transport, Logistics, Communications and Wholesale or Retail, we have a specialized solution just for you!
-        </p>
+      <h3>Our Mission</h3>
+        <p>To harness the positivity of synergies with global partners whilst creating, developing, managing superior and reliable efficient renewable energy concepts, water technology and infrastructure through our superior EPCM³™ solutions. This sees Energyneering Zimbabwe continuously seeking to provide innovative solutions, maximizing value and perfecting efficiencies that achieve 100% energy independence and meeting your demands.</p>
     </div>
     </div>
-    <div>
-      <img src="/images/eye-12117.svg">
+    <div class="box">
+      <img src="/images/eye-12117.svg"class="svg">
         <div>
-          <h3>Vision</h3>
-            <p>Be an innovative specialist and partner of choice through empowering a new world of renewable energy solutions and support services, delivering 100% grid independence, excellence and value engineering that is more sustainable, lasts longer and for generations to come.
+          <h3>Our Vision</h3>
+            <p> Be an innovative specialist and partner of choice through empowering a new world of renewable energy solutions and support services, delivering 100% grid independence, excellence and value engineering that is more sustainable, lasts longer and costs less today and for generations to come.
             </p>
         </div>
     </div>
-          <div>
-            <img src="/images/target-2851.svg">
+          <div class="box">
+            <img src="/images/target-2851.svg"class="svg">
             <div>
-              <h3>Mission</h3>
-              <p>
-                To harness the positivity of synergies with global partners whilst creating, developing, managing superior and reliable efﬁcient renewable energy concepts, water technology and infrastructure through our superior EPCM solutions. This sees Energyneering Zimbabwe continuously seeking to provide innovative solutions, maximizing value and perfecting efﬁciencies that achieve 100% energy independence and meeting your demands.
-              </p>
+              <h3>Our Values</h3>
+              <ul>
+                <li>Innovation</li>
+                <li>Intergrity</li>
+                <li>Team Work</li>
+                <li>Synergies</li>
+                <li>Efficiency</li>
+            </ul>
             </div>
           </div>
         </div>
@@ -117,6 +133,20 @@
     </div>
   </section>
 
+  <div>
+    <h2 class="partner">Our Partners</h2>
+  </div>
+
+  <div class="carousel">
+    <div class="image-container" id="imgs">
+      
+        <img src="images/r1.jpg" class="slide">
+        <img src="images/r2.jpg" class="slide">
+        <img src="images/r3.jpg" class="slide">
+        <img src="images/r4.jpg" class="slide">
+      
+    </div>
+  </div>
 
   <section>
     <div class="finance">
@@ -198,6 +228,9 @@
     </footer>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/carousel.js"></script>
 <script src="/type.js"></script> 
 <script src="/counter.js"></script> 
 <script src="/nav.js"></script> 

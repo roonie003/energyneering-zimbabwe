@@ -64,7 +64,7 @@
 
 /* Section header */
 .section-header {
-    padding: 30px;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,10 +75,11 @@
 .section-header h2 {
     font-size: 40px;
     margin: 20px 0;
+    padding: 2rem 0;
 }
 
 .section-padding {
-    padding: 20px 20px 40px;
+    padding: 4rem;
 }
 
 /* Flex grid */
@@ -89,8 +90,8 @@
 }
 
 .flex-grid .column {
-    flex: 25%;
-    max-width: 25%;
+    flex: 50%;
+    max-width: 50%;
     padding: 0 4px;
 }
 
