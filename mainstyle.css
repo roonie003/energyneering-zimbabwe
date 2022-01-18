@@ -210,7 +210,7 @@ img {
 /*counter*/
 
 .count{
-    background-color: #FFFD08;
+    background-image: linear-gradient(270deg, orange , yellow);
     color: #222;
     display: flex;
     align-items: center;
@@ -277,11 +277,10 @@ img {
 #main-footer {
     background: #444;
     color: #f5f5f5;
+    
   }
   
-  #main-footer img {
-    width: 150px;
-  }
+
   
   #main-footer a {
     color: #fff;
@@ -291,11 +290,17 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  #main-footer .footer-container > h3 {
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
   }
   
   #main-footer .footer-container > *:last-child {
     grid-column: 1 / span 4;
-    padding: .5rem;
+    padding-top: 2rem;
     text-align: center;
     font-size: 0.75rem;
   }
@@ -351,8 +356,12 @@ img {
     text-align: left;
   }
   
+  .fa{
+    color: #f5f5f5;
+  }
+
   .dropdown-content a:hover {
-    background-color: #FFFD08;
+    background-image: linear-gradient(270deg, orange , yellow);
     color: #222;
   }
   
@@ -375,16 +384,20 @@ img {
     list-style: none;
   }
 /*carousel*/
+
 .slide {
+    
     width: 980px;
     height: 100px;
     padding-top: 2rem;
+    background-image: linear-gradient(180deg, #fff, #f5f5f5); 
   }
 .carousel {
     
     height: 200px;
     width: 100%;
     overflow: hidden;
+    
   }
   
   .image-container {
@@ -393,7 +406,7 @@ img {
     transition: transform 0.5s ease-in-out;
   }
   
-/*tea,*/
+/*project*/
 
 .cases img:hover {
     opacity: 0.7;
@@ -402,4 +415,168 @@ img {
 .cases img{
     height: 167px;
     width: 132px;
+}
+
+.time{
+  background-image: linear-gradient(180deg, #fff, #f5f5f5);
+}
+.history{
+  text-align: center;
+  
+}
+
+.history > h2{
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+.pdf {
+  padding-top:1rem;
+  width:100%; 
+  height: 640px;
+  
+}
+
+.contact {
+  padding: 5px;
+  margin-right: 20px;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #222;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  border: solid 3px #29AA57;
+  margin: 10px;
+  max-width: 650px;
+  max-height: 650px;
+  width: 100%;
+  position:relative;
+}
+
+form {
+  padding: 45px;
+}
+
+h2 {
+  font-size: 32px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.email {
+    float: right;
+    width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #29AA57;
+    color: #222;
+    font-size:18px;
+    letter-spacing: 1px;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+.message {
+    float: none;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #222;
+}
+
+
+
+.submit {
+  text-align: center;
+}
+
+#form_button:hover {
+  opacity: 0.9;
+  border: #F5f5f5 2px solid;
+  color: #ffc033;
+  transition: all .3s ease-in-out;
+}
+
+.connect {
+    
+    font-size: 40px;
+    text-align: start;
+    margin-left: 150px;
+    padding-top: 30px;
+}
+
+.connect2{
+  text-align: start;
+  margin-left: 160px;
+  font-size: 20px;
+}
+
+.call{
+  margin-left: 250px;
+  padding-top: 60px;
+  font-size: 18px;
+}
+
+i{
+    padding:0 25px;
+    color: #29AA57;
 }
