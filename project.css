@@ -97,9 +97,6 @@ body {
     -webkit-transition: all 700ms ease-in;
   }
   
-  .panel:hover {
-    
-  }
  
   .panel.active {
     flex: 5;
